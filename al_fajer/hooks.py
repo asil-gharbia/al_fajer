@@ -7,6 +7,7 @@ app_description = "custom app "
 app_email = "aseel.gharbia@gmail.com"
 app_license = "MIT"
 
+
 # Includes in <head>
 # ------------------
 
