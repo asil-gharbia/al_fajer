@@ -1,0 +1,232 @@
+{
+ "actions": [],
+ "autoname": "VL.######",
+ "creation": "2023-01-02 17:48:08.335174",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "employee",
+  "employee_name",
+  "column_break_3",
+  "posting_date",
+  "violation_category",
+  "violation_type",
+  "penalty",
+  "action",
+  "override_deduction",
+  "dropping_violations",
+  "deduction",
+  "column_break_9",
+  "frequency_count",
+  "additional_salary_deduction",
+  "additional_salary_earning",
+  "violation_action",
+  "deduction_type",
+  "deduction_amountrate",
+  "section_break_7",
+  "note",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Read Only",
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_standard_filter": 1,
+   "label": "Data"
+  },
+  {
+   "fieldname": "violation_category",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Violation Category",
+   "options": "Violation Category",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.violation_category != null",
+   "fieldname": "violation_type",
+   "fieldtype": "Link",
+   "label": "Violation Type",
+   "options": "Violation Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "penalty",
+   "fieldtype": "Section Break",
+   "label": "Penalty"
+  },
+  {
+   "fieldname": "action",
+   "fieldtype": "Data",
+   "label": "Action",
+   "read_only": 1
+  },
+  {
+   "fieldname": "deduction",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Deduction",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "frequency_count",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Frequency Count",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Small Text",
+   "label": "Note"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Violation",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "override_deduction",
+   "fieldtype": "Check",
+   "label": "Override Deduction"
+  },
+  {
+   "fieldname": "deduction_type",
+   "fieldtype": "Data",
+   "label": "Deduction Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "deduction_amountrate",
+   "fieldtype": "Data",
+   "label": "Deduction Amount/Rate",
+   "read_only": 1
+  },
+  {
+   "fieldname": "violation_action",
+   "fieldtype": "Link",
+   "label": "Violation Action",
+   "options": "Violation Action",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "additional_salary_deduction",
+   "fieldtype": "Link",
+   "label": "Additional Salary Deduction",
+   "options": "Additional Salary",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "additional_salary_earning",
+   "fieldtype": "Link",
+   "label": "Additional Salary Earning",
+   "options": "Additional Salary",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "dropping_violations",
+   "fieldtype": "Check",
+   "label": "Dropping Violations"
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-08-10 11:24:45.822064",
+ "modified_by": "Administrator",
+ "module": "Al Fajer",
+ "name": "Violation",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "employee",
+ "track_changes": 1
+}

@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "creation": "2023-05-17 05:21:31.201477",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "deduction",
+  "deduction_refund"
+ ],
+ "fields": [
+  {
+   "description": "The salary component of the deduction",
+   "fieldname": "deduction",
+   "fieldtype": "Link",
+   "label": "Deduction",
+   "options": "Salary Component"
+  },
+  {
+   "description": "The salary component of the deduction refund in the event of cancellation of the penalty",
+   "fieldname": "deduction_refund",
+   "fieldtype": "Link",
+   "label": "Deduction refund",
+   "options": "Salary Component"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-05-17 05:22:06.547615",
+ "modified_by": "Administrator",
+ "module": "Al Fajer",
+ "name": "violation setting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

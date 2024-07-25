@@ -1,0 +1,39 @@
+ {
+    "creation": "2023-01-03 10:57:55.163368",
+    "doctype": "DocType",
+    "editable_grid": 1,
+    "engine": "InnoDB",
+    "field_order": [
+     "frequency",
+     "violation_action"
+    ],
+    "fields": [
+     {
+      "fieldname": "frequency",
+      "fieldtype": "Int",
+      "in_list_view": 1,
+      "label": "Frequency",
+      "reqd": 1
+     },
+     {
+      "fieldname": "violation_action",
+      "fieldtype": "Link",
+      "in_list_view": 1,
+      "label": "Violation Action",
+      "options": "Violation Action",
+      "reqd": 1
+     }
+    ],
+    "istable": 1,
+    "modified": "2023-01-03 10:57:55.163368",
+    "modified_by": "Administrator",
+    "module": "Al Fajer",
+    "name": "Frequency Violation Action",
+    "owner": "Administrator",
+    "permissions": [],
+    "quick_entry": 1,
+    "sort_field": "modified",
+    "sort_order": "ASC",
+    "track_changes": 1
+   }
+   
