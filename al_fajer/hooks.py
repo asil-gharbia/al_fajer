@@ -59,6 +59,7 @@ app_include_js = [
 # Jinja
 # ----------
 
+
 # add methods and filters to jinja environment
 # jinja = {
 #	"methods": "al_fajer.utils.jinja_methods",
