@@ -6,6 +6,7 @@ app_publisher = "Asil Gharbia"
 app_description = "custom app "
 app_email = "aseel.gharbia@gmail.com"
 app_license = "MIT"
+app_logo_url = "/assets/al_fajer/imgs/1.png"
 
 # Includes in <head>
 # ------------------
@@ -13,6 +14,10 @@ app_license = "MIT"
 # include js, css files in header of desk.html
 # app_include_css = "/assets/al_fajer/css/al_fajer.css"
 # app_include_js = "/assets/al_fajer/js/al_fajer.js"
+app_include_js = [
+    "/assets/al_fajer/js/map_defaults.js",
+]
+
 
 # include js, css files in header of web template
 # web_include_css = "/assets/al_fajer/css/al_fajer.css"
@@ -215,3 +220,57 @@ app_license = "MIT"
 # auth_hooks = [
 #	"al_fajer.auth.validate"
 # ]
+fixtures = [
+    {"dt": "Translation"},
+    # {"dt": "Kanban Board"},
+    # {"dt": "Custom Field",
+    #     "filters": [
+    #         [
+    #             "name",
+    #             "in",
+    #             [
+                   
+    #             ],
+    #         ]
+    #     ],
+    # },
+    # {"dt": "Letter Head",
+    #     "filters": [
+    #         [
+    #             "name",
+    #             "in",
+    #             ["al_fajer"],
+    #         ]
+    #     ],
+    # },
+    
+   
+    # {"dt": "Workflow",
+    #     "filters": [
+    #         [
+    #             "name",
+    #             "in",
+    #             [
+                    
+    #             ],
+    #         ]
+    #     ],
+    # },
+    # {"dt": "Role",
+    #     "filters": [
+    #         [
+    #             "name",
+    #             "in",
+    #             [   
+                   
+                    
+    #             ],
+    #         ]
+    #     ],
+    # },    
+
+]
+
+website_context = {
+"favicon": "/assets/al_fajer/imgs/1.png",
+"splash_image": "/assets/al_fajer/imgs/3.png",}
