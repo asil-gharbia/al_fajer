@@ -14,10 +14,13 @@ app_logo_url = "/assets/al_fajer/imgs/1.png"
 # include js, css files in header of desk.html
 # app_include_css = "/assets/al_fajer/css/al_fajer.css"
 # app_include_js = "/assets/al_fajer/js/al_fajer.js"
+app_include_css = [
+    "/assets/al_fajer/css/custom_theme.css",
+]
+
 app_include_js = [
     "/assets/al_fajer/js/map_defaults.js",
 ]
-
 
 # include js, css files in header of web template
 # web_include_css = "/assets/al_fajer/css/al_fajer.css"
@@ -223,53 +226,6 @@ app_include_js = [
 # ]
 fixtures = [
     {"dt": "Translation"},
-    # {"dt": "Kanban Board"},
-    # {"dt": "Custom Field",
-    #     "filters": [
-    #         [
-    #             "name",
-    #             "in",
-    #             [
-                   
-    #             ],
-    #         ]
-    #     ],
-    # },
-    # {"dt": "Letter Head",
-    #     "filters": [
-    #         [
-    #             "name",
-    #             "in",
-    #             ["al_fajer"],
-    #         ]
-    #     ],
-    # },
-    
-   
-    # {"dt": "Workflow",
-    #     "filters": [
-    #         [
-    #             "name",
-    #             "in",
-    #             [
-                    
-    #             ],
-    #         ]
-    #     ],
-    # },
-    # {"dt": "Role",
-    #     "filters": [
-    #         [
-    #             "name",
-    #             "in",
-    #             [   
-                   
-                    
-    #             ],
-    #         ]
-    #     ],
-    # },    
-
 ]
 
 website_context = {
