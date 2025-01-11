@@ -1,6 +1,10 @@
-/* --orange-500: #F8814F;
---orange-400: #F9966C;
---orange-300: #FDAE8C; */
+/* Main Theme Colors:
+
+    --orange-500: #F8814F;
+    --orange-400: #F9966C;
+    --orange-300: #FDAE8C; 
+*/
+
 
 *::-webkit-scrollbar {
     width: 6px;
